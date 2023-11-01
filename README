@@ -1,0 +1,27 @@
+Introduction
+============
+WYP_Blockchain is a blockchain implemention written in Python. The base code is heavily modified from course material provided by https://www.superdatascience.com/.
+
+The application starts a server driven by Flask(https://flask.palletsprojects.com) hosting a blockchain implemention. Users then send blockchain commands to the application via HTTP requests. By default, the server listens on http://127.0.0.1:5000.
+
+
+Usage
+======
+To run a unit-test on the blockchain logic and exit,
+> python3 wyp_blockchain.py
+
+To run the application,
+> python3 wyp_blockchain_peer.py
+
+To get the current chain, use the URL: http://127.0.0.1:5000/get-chain
+
+To mine a new block, use the URL: http://127.0.0.1:5000/mine-block
+
+To run a full validation of the current chain, use the URL: http://127.0.0.1:5000/chain-full-check
+
+
+More details
+============
+For more information, refer to the docstring documentation in the souce files.
+
+
